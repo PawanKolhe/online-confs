@@ -41,4 +41,7 @@ let eventsCal = new Calendar({
 fetch('/api/events').then(res => res.json()).then(data => {
   events = data;
   eventsCal.setEventsData(events);
+  if(Object.keys(eventsCal.eventDayMap).length === 0) {
+    eventsCal.updateCurrentDate(1);
+  }
 });
