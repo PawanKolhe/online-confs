@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Tech Events</title>
+
+  <!--normalize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+  
+  <!--Import color-calendar library-->
+  <script src="https://cdn.jsdelivr.net/npm/color-calendar@1.0.3/dist/bundle.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/color-calendar@1.0.3/dist/css/theme-glass.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Online Tech Confs</h1>
+  </header>
+  <div class="main-container">
+    <!--Calendar-->
+    <div id="events-calendar"></div>
+    <!--Events Display-->
+    <div class="events-display"></div>
+  </div>
+
+  <!-- WAVE ANIMATION seperator -->
+  <svg class="wave-animation"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 "
+    preserveAspectRatio="none">
+  <defs>
+  <path id="gentle-wave"
+  d="M-160 44c30 0 
+      58-18 88-18s
+      58 18 88 18 
+      58-18 88-18 
+      58 18 88 18
+      v44h-352z" />
+    </defs>
+    <g class="parallax1"><use xlink:href="#gentle-wave" x="50" y="3" fill="#BBE2FB"/></g>
+    <g class="parallax2"><use xlink:href="#gentle-wave" x="50" y="0" fill="#A4D9FA"/></g>
+    <g class="parallax3"><use xlink:href="#gentle-wave" x="50" y="9" fill="#4AB3F5"/></g>
+    <g class="parallax4"><use xlink:href="#gentle-wave" x="50" y="6" fill="#1DA1F3"/></g>
+  </svg>
+  <div class="blue-footer">
+    <div class="footer-text">Built by <a href="https://pawankolhe.com" target="_blank">Pawan Kolhe</a></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #FF6E35;
+}
+
+/* Scrollbar style */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF6E35;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffa581;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+header h1 {
+  text-align: center;
+  color: #dad8d8;
+  font-size: 3rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+#events-calendar {
+  margin-right: 30px;
+}
+
+.events-display {
+  width: 400px;
+  min-height: 400px;
+  max-height: 500px;
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  overflow: auto;
+}
+
+.no-events-text {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.event {
+  background-color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.event:last-child {
+  margin-bottom: 0;
+}
+.event-title {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.event-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 0.5rem;
+}
+.event-right {
+  flex: 0 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.event-free-text, .event-paid-text {
+  transform: rotate(270deg);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+}
+.event-free {
+  background-color: #388E3C;
+}
+.event-paid {
+  background-color: #1976D2;
+}
+.event-url {
+  margin-top: 10px;
+  color: #333333;
+  text-decoration: none;
+  word-break: break-all;
+}
+.event-topics {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.event-topic {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.event-topic:last-child {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  header h1 {
+    font-size: 1.6rem;
+    padding-top: 10px;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  #events-calendar {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .events-display {
+    width: 100%;
+  }
+}
+
+/*
+** Wave Content Divider by CMDW
+** https://codepen.io/candra-shalahuddin/pen/vQqzyB
+*/
+.wave-animation {
+  display: block;
+  width: 100%;
+  height: 90px;
+  max-height: 90px;
+  margin: 0;
+  z-index: 5;
+  left: 0px;
+}
+
+.parallax1 > use {
+  animation: move-forever1 10s linear infinite;
+}
+.parallax1 > use::nth-child(1) {
+  animation-delay: -2s;
+}
+
+.parallax2 > use {
+  animation: move-forever2 8s linear infinite;
+}
+.parallax2 > use:nth-child(1) {
+  animation-delay: -2s;
+}
+
+.parallax3 > use {
+  animation: move-forever3 6s linear infinite;
+}
+.parallax3 > use:nth-child(1) {
+  animation-delay: -2s;
+}
+
+.parallax4 > use {
+  animation: move-forever4 4s linear infinite;
+}
+.parallax4 > use:nth-child(1) {
+  animation-delay: -2s;
+}
+
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+@keyframes move-forever3 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever4 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+
+.blue-footer {
+  background-color: #1DA1F3;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-text {
+  color: #b8e3ff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.footer-text a {
+  color: #d4edfd;
+  text-decoration: none;
+}
+.footer-text a:hover {
+  border-bottom: 2px dotted #d4edfd;
+}
