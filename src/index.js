@@ -7,7 +7,7 @@ const app = express();
 
 // EXPRESS CONFIG
 // Set port
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 // Set static folder
 app.use(express.static(path.join(__dirname, "public")));
 // app.use(logger);
