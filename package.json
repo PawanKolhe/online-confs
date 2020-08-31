@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "export PORT=8080 && node src/index.js",
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
   "author": "Pawan Kolhe <contact@pawankolhe.com>",

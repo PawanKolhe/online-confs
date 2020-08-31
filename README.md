@@ -10,7 +10,12 @@ My submission for the [Suns Out Hacks Out Hackathon](https://sunsouthacksout.dev
 
 - I'm using a JavaScript calendar library that I had designed some days back for my calendar.
 
-- I've tried to make the UI as close to the summer ☀️ theme as possible.
+- I've tried to make the UI as close to the summer ☀️ like as possible.
+
+## 💻 Demo
+
+I've deployed the web app to Heroku.  
+https://online-tech-confs.herokuapp.com/
 
 ## 🚀 Getting Started
 1. Install dependencies
